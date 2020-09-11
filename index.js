@@ -30,7 +30,7 @@ data.map((item) => {
 
 clearButton.addEventListener('click', function() {
     localStorage.clear()
-    if (ul.firstChild) {
+    while (ul.firstChild) {
         ul.removeChild(ul.firstChild)
     }
 })
